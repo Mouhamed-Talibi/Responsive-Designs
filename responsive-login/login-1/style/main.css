@@ -1,0 +1,34 @@
+body {
+    font-family: "Jost", sans-serif;
+    background: #ececee;
+}
+
+/* left box */
+.box-area {
+    width: 930px;
+}
+
+/* right box  */
+.right-box {
+    padding: 40px 30px;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+/* small screens */
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+}
