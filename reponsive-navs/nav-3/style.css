@@ -1,0 +1,98 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* start nav */
+.navbar {
+    background-color: #ffffff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 18px;
+    padding: 0.5rem 1rem;
+}
+.navbar-brand {
+    font-weight: 600;
+    color: #17be79dd;
+    font-size: 24px;
+    transition: .3s color;
+}
+
+.login-button  {
+    background-color: #17be79dd;
+    color: white;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #24d13bdd;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #292626;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #0a0a0a;
+    font-weight: 600;
+    transition: .3s font-weight;
+}
+
+@media (min-width: 992px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #17be79dd;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+/* end nav */
+
+/* start hero */
+.hero-section {
+    background: url("landing.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before  {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+/* end hero */

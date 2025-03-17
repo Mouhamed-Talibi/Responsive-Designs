@@ -1,0 +1,14 @@
+body {
+    background: url("airport.jpg") rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        backdrop-filter: blur(5px);
+        color: white;
+    }
+}
